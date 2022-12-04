@@ -1,10 +1,12 @@
 import { createRoot } from "react-dom/client";
+import { FindUsers } from "./props/FindUser";
 import GuestList from "./props/GuestList";
 
 const App = () => {
 	return (
 		<div className="container">
 			<GuestList />
+			<FindUsers />
 		</div>
 	);
 };

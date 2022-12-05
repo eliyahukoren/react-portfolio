@@ -3,6 +3,7 @@ import { Button } from "./Button";
 import { Input } from "./Input";
 import { Card } from "./Card";
 import { UserList } from "./UserList";
+import { ElementsList } from './ElementsList';
 
 const users = [
 	{ name: "Sarah", age: 19, id: 1 },
@@ -27,6 +28,7 @@ export const FindUsers:React.FC = () => {
 	return (
 		<>
 		<Card cardTitle="Find User">
+			<ElementsList elements={users.map(user => user.name)}/>
 			<Input value={name} onChange={(e) => setName(e.target.value)}/>
 			<Button 
 				text="Find" 

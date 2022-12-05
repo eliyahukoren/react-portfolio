@@ -7,7 +7,6 @@ export const ElementsList: React.FC<IElementsList> = (props: IElementsList) => {
 			{props.elements.map((element, index) => (
 				<li key={index} className="list-group-item">
 					{element}
-					{element}
 				</li>
 			))}
 		</ul>
